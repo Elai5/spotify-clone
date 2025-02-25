@@ -506,16 +506,26 @@ hr {
   .header {
     display: flex;
     align-items: start;
-    margin: 0;
+    margin-top: -20px;
     /* padding: 0; */
     /* background-color: green; */
   }
   .header h4 {
-    font-size: 14px;
+    font-size: 12px;
     text-align: start;
+  }
+  .my-titles {
+    /* background-color: red; */
+    height: 60px;
+    /* padding: -50px; */
+    margin-top: -40px;
+    margin-left: -30px;
   }
   .my-titles .title {
     flex: 1 1 calc(50% - 10px); /* Adjust the item width for very small screens */
+  }
+  .my-titles .title p {
+    font-size: 10px;
   }
 
   .sidebar .icons a {
@@ -552,6 +562,9 @@ hr {
   }
   .row {
     padding: 0 10px; /* Reduce padding even more for very small screens */
+  }
+  .bim i {
+    background-color: black;
   }
 
   .card {
