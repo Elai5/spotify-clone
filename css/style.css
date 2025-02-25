@@ -92,7 +92,7 @@ li a.active {
 
 li .bim {
   /* color: blue; */
-  background: linear-gradient(to right, red, white);
+  /* background: linear-gradient(to right, red, white); */
   outline: none;
   padding: 10px;
 }
@@ -516,16 +516,19 @@ hr {
   }
   .my-titles {
     /* background-color: red; */
-    height: 60px;
+    height: 80px;
     /* padding: -50px; */
     margin-top: -40px;
     margin-left: -30px;
+    max-width: 100%;
+    /* background-color: #1db954; */
   }
   .my-titles .title {
-    flex: 1 1 calc(50% - 10px); /* Adjust the item width for very small screens */
+    /* flex: 1 1 calc(50% - 10px); */
+    flex: 0 1 auto; /* Adjust the item width for very small screens */
   }
   .my-titles .title p {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .sidebar .icons a {
@@ -555,7 +558,9 @@ hr {
   }
   .context .navbar i {
     font-size: 12px;
-    color: red;
+    /* color: red; */
+    color: white;
+    font-weight: bold;
   }
   .context .navbar .menu {
     display: none;
@@ -564,7 +569,7 @@ hr {
     padding: 0 10px; /* Reduce padding even more for very small screens */
   }
   .li .bim {
-    background-color: black;
+    background: black;
   }
 
   .card {
