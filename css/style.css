@@ -20,7 +20,7 @@ body {
 }
 
 .sidebar {
-  width: 250px;
+  width: 15%;
   background-color: black;
   color: white;
   overflow-y: auto;
@@ -143,7 +143,7 @@ p {
   background: rgb(30, 29, 29);
   height: 100vh;
   color: white;
-  margin-left: 250px;
+  margin-left: 15%;
   width: 100%;
 }
 
@@ -305,6 +305,18 @@ hr {
   white-space: nowrap; /* Prevents wrapping */
   scroll-snap-type: x mandatory; /* Smooth scrolling effect */
 }
+.context .main .header {
+  text-transform: capitalize;
+  width: 100%;
+  /* padding: 15px; */
+  font-size: 22px;
+  color: whitesmoke;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  /* padding-bottom: 28px; */
+  /* background-color: red; */
+  text-align: start;
+  margin-left: -40px;
+}
 
 /* Style the scrollbar (Optional) */
 .context .my-titles::-webkit-scrollbar {
@@ -451,13 +463,14 @@ hr {
   .container {
     /* background-color: gold; */
     overflow: scroll;
+    max-width: 100%;
   }
   .header {
     display: flex;
     align-items: start;
     margin: 0;
     /* padding: 0; */
-    background-color: green;
+    /* background-color: green; */
   }
   .header h4 {
     font-size: 14px;
@@ -466,15 +479,11 @@ hr {
   .my-titles .title {
     flex: 1 1 calc(50% - 10px); /* Adjust the item width for very small screens */
   }
-  .sidebar {
-    /* background-color: #1db954; */
-    /* height: 100vh; */
-    width: 80px;
-  }
+
   .sidebar .icons a {
     height: 40px;
-    gap: 30px;
-    padding: 30px 6px;
+    /* gap: 10px; */
+    padding: 30px 0px;
     font-size: 22px;
     line-height: 1.9;
     /* color: red; */
@@ -499,12 +508,9 @@ hr {
     bottom: 35px;
     padding: 0 8px;
     border-radius: 12px;
+    display: none;
   }
 
-  .context {
-    /* background-color: #1db954; */
-    margin-left: 80px;
-  }
   .context .navbar {
     width: 100%;
     height: 50px;
@@ -513,6 +519,22 @@ hr {
   .context .navbar .menu {
     display: none;
   }
+  .row {
+    padding: 0 10px; /* Reduce padding even more for very small screens */
+  }
+
+  .card {
+    flex: 1 1 100%; /* Cards stack vertically in a single column */
+    max-width: 65%; /* Full width for small screens */
+  }
+
+  .card h5.desc {
+    font-size: 16px; /* Slightly smaller text for better readability */
+  }
+
+  .card p {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
   .footer {
     height: 50px;
   }
@@ -520,6 +542,14 @@ hr {
 @media only screen and (max-width: 768px) {
   body {
     font-size: 16px;
+  }
+  .sidebar {
+    width: 25%;
+    height: 100vh;
+  }
+  .context {
+    width: 100%;
+    margin-left: 33%;
   }
   .navbar .menu {
     /* display: none; */
