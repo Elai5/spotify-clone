@@ -563,7 +563,7 @@ hr {
   .row {
     padding: 0 10px; /* Reduce padding even more for very small screens */
   }
-  .bim i {
+  .li .bim {
     background-color: black;
   }
 
