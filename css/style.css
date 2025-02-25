@@ -585,6 +585,10 @@ hr {
     font-size: 14px; /* Adjust font size for smaller screens */
   }
   .footer {
-    height: 50px;
+    height: 40px;
+  }
+  .footer h3,
+  p {
+    font-size: 8px;
   }
 }
